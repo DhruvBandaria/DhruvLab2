@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DhruvLab2</string>
+    <string name="enter_button">Enter</string>
+    <string name="image_description">Company Logo</string>
+    <string name="hometype_1">Apartment</string>
+    <string name="hometype_2">Detached Home</string>
+    <string name="hometype_3">Semi-Detached Home</string>
+    <string name="hometype_4">Condominium Apartment</string>
+    <string name="hometype_5">Town House</string>
+</resources>
