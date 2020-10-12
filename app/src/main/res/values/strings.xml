@@ -1,10 +1,95 @@
 <resources>
     <string name="app_name">DhruvLab2</string>
     <string name="enter_button">Enter</string>
+    <string name="visit">Visit</string>
+    <string name="virtually">virtually</string>
+    <string name="physically">physically</string>
+    <string name="visit_type">Visit Type</string>
     <string name="image_description">Company Logo</string>
-    <string name="hometype_1">Apartment</string>
+    <string name="hometype_1">Apartments</string>
     <string name="hometype_2">Detached Home</string>
     <string name="hometype_3">Semi-Detached Home</string>
     <string name="hometype_4">Condominium Apartment</string>
     <string name="hometype_5">Town House</string>
+
+    <string name="app1_description">Title: Studio Apartment</string>
+    <string name="app1_address">Address: 5541 King Street, Toronto, ON</string>
+    <string name="app1_price">Price: $450,000</string>
+
+    <string name="app2_description">Title: Bachelor Apartment</string>
+    <string name="app2_address">Address: 4141 Queen Street, Toronto, ON</string>
+    <string name="app2_price">Price: $560,000</string>
+
+    <string name="app3_description">Title: Couple Apartment</string>
+    <string name="app3_address">Address: 580 Young Street, Toronto, ON</string>
+    <string name="app3_price">Price: $768,000</string>
+
+    <string name="app4_description">Title: Family Apartment</string>
+    <string name="app4_address">Address: 5554 Bay Street, Toronto, ON</string>
+    <string name="app4_price">Price: $1,200,000</string>
+
+    <string name="detch1_description">Title: Family House</string>
+    <string name="detch1_address">Address: 471 Lakeshore ave, Toronto, ON</string>
+    <string name="detch1_price">Price: $900,000</string>
+
+    <string name="detch2_description">Title: Twin House</string>
+    <string name="detch2_address">Address: 554 Brimorton dr, Toronto, ON</string>
+    <string name="detch2_price">Price: $650,000</string>
+
+    <string name="detch3_description">Title: Luxury house</string>
+    <string name="detch3_address">Address: 78 Richmod hills, Toronto, ON</string>
+    <string name="detch3_price">Price: $1,800,000</string>
+
+    <string name="detch4_description">Solo House</string>
+    <string name="detch4_address">Address: 884 Citadel dr, Toronto, ON</string>
+    <string name="detch4_price">Price: $520,000</string>
+
+    <string name="smdt1_description">Title: Twin House</string>
+    <string name="smdt1_address">Address: 45 Bark street, Oshawa, ON</string>
+    <string name="smdt1_price">Price: $220,000</string>
+
+    <string name="smdt2_description">Title: Large Scape</string>
+    <string name="smdt2_address">Address: 88 Ellesmere road, Toronto, ON</string>
+    <string name="smdt2_price">Price: $690,000</string>
+
+    <string name="smdt3_description">Title: Pool House</string>
+    <string name="smdt3_address">Address: 241 Stark blvd, Toronto, ON</string>
+    <string name="smdt3_price">Price: $440,000</string>
+
+    <string name="smdt4_description">Title: Dream House</string>
+    <string name="smdt4_address">Address: 74 Dream street, Toronto, ON</string>
+    <string name="smdt4_price">Price: $1,500,000</string>
+
+    <string name="condo1_description">Title: Luxury Condo</string>
+    <string name="condo1_address">Address: 7456 York Mills, Toronto, ON</string>
+    <string name="condo1_price">Price: $720,000</string>
+
+    <string name="condo2_description">Title: Affordable Condo</string>
+    <string name="condo2_address">Address: 4891 King St. West, Toronto, ON</string>
+    <string name="condo2_price">Price: $320,000</string>
+
+    <string name="condo3_description">Title: Orange Land</string>
+    <string name="condo3_address">Address: 354 Midland ave, Toronto, ON</string>
+    <string name="condo3_price">Price: $390,000</string>
+
+    <string name="condo4_description">Title: Tall Tower</string>
+    <string name="condo4_address">Address: 3501 Markham Road, Toronto, ON</string>
+    <string name="condo4_price">Price: $420,000</string>
+
+    <string name="town1_description">Title: Common House</string>
+    <string name="town1_address">Address: 89 Durhum street, Toronto, ON</string>
+    <string name="town1_price">Price: $420,000</string>
+
+    <string name="town2_description">Title: Compact House</string>
+    <string name="town2_address">Address: 449 Hunting Dr, Toronto, ON</string>
+    <string name="town2_price">Price: $360,000</string>
+
+    <string name="town3_description">Title: Family Town House</string>
+    <string name="town3_address">Address: 77 Finch road, Toronto, ON</string>
+    <string name="town3_price">Price: $720,000</string>
+
+    <string name="town4_description">Title: Morden House</string>
+    <string name="town4_address">Address: 79 Largo Lane, Toronto, ON</string>
+    <string name="town4_price">Price: $440,000</string>
+
 </resources>
