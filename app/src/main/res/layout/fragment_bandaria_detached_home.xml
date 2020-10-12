@@ -17,7 +17,7 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="157dp"
+                android:layout_width="147dp"
                 android:layout_height="32dp"
                 android:layout_marginStart="28dp"
                 android:layout_marginTop="16dp"
@@ -108,7 +108,7 @@
                 android:layout_height="156dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="280dp"
-                android:src="@drawable/detch_2"
+                android:src="@drawable/smdt_4"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -193,7 +193,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="460dp"
-                android:text="@string/detch3_description"
+                android:text="@string/app3_description"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -205,7 +205,7 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="492dp"
                 android:layout_marginEnd="24dp"
-                android:text="@string/detch3_address"
+                android:text="@string/app3_address"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -215,7 +215,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="548dp"
                 android:layout_marginEnd="96dp"
-                android:text="@string/detch3_price"
+                android:text="@string/app3_price"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -269,7 +269,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="660dp"
-                android:text="@string/detch4_description"
+                android:text="@string/app4_description"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -281,7 +281,7 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="692dp"
                 android:layout_marginEnd="24dp"
-                android:text="@string/detch4_address"
+                android:text="@string/app4_address"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -291,7 +291,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="748dp"
                 android:layout_marginEnd="96dp"
-                android:text="@string/detch4_price"
+                android:text="@string/app4_price"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

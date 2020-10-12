@@ -19,6 +19,12 @@ public class BandariaHomeTypesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bandaria_home_types);
+        /*Fragment frag = new BandariaAppartmentFragment();
+        FragmentManager fragmentManager=getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragmentContainer,frag,"Demo Fragment");
+        fragmentTransaction.commit();*/
+        changeFragment(new BandariaDetachedHome());
     }
 
     @Override
@@ -30,40 +36,30 @@ public class BandariaHomeTypesActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        BandariaAppartmentFragment frag1 = new BandariaAppartmentFragment();
-        BandariaDetachedHome frag2=new BandariaDetachedHome();
-        BandariaSemiDetachedFragment frag3=new BandariaSemiDetachedFragment();
-        BandariaCondominiumFragment frag4 = new BandariaCondominiumFragment();
-        BandariaTownHouse frag5 = new BandariaTownHouse();
-        FragmentManager fragmentManager=getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction;
         switch (item.getItemId()){
             case R.id.item1:
-                fragmentTransaction=fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentContainer,frag1,"Demo Fragment");
-                fragmentTransaction.commit();
+                changeFragment(new BandariaAppartmentFragment());
                 break;
             case R.id.item2:
-                fragmentTransaction=fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentContainer,frag2,"Demo Fragment");
-                fragmentTransaction.commit();
+                changeFragment(new BandariaDetachedHome());
                 break;
             case R.id.item3:
-                fragmentTransaction=fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentContainer,frag3,"Demo Fragment");
-                fragmentTransaction.commit();
+                changeFragment(new BandariaSemiDetachedFragment());
                 break;
             case R.id.item4:
-                fragmentTransaction=fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentContainer,frag4,"Demo Fragment");
-                fragmentTransaction.commit();
+                changeFragment(new BandariaCondominiumFragment());
                 break;
             case R.id.item5:
-                fragmentTransaction=fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragmentContainer,frag5,"Demo Fragment");
-                fragmentTransaction.commit();
+                changeFragment(new BandariaTownHouse());
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void changeFragment(Fragment frag){
+        FragmentManager fragmentManager=getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction= fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragmentContainer,frag,"Demo Fragment");
+        fragmentTransaction.commit();
     }
 }
