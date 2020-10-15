@@ -35,24 +35,19 @@ public class BandariaHomeTypesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bandaria_home_types);
+
+        sharedPreferences=getSharedPreferences(CHECKOUT_DATA,MODE_PRIVATE);
+
         textView=findViewById(R.id.textView2);
         listView=findViewById(R.id.listView);
 
         arrayList = new ArrayList<>();
-        arrayList.add(new ListItems(R.drawable.app_1,R.string.app1_description,R.string.app1_address,R.string.app1_price));
-        arrayList.add(new ListItems(R.drawable.app_2,R.string.app2_description,R.string.app2_address,R.string.app2_price));
-        arrayList.add(new ListItems(R.drawable.app_3,R.string.app3_description,R.string.app3_address,R.string.app3_price));
-        arrayList.add(new ListItems(R.drawable.app_4,R.string.app4_description,R.string.app4_address,R.string.app4_price));
+        arrayList.add(new ListItems(R.drawable.app_1,R.string.app1_description,R.string.app1_address,R.string.app1_price,1));
+        arrayList.add(new ListItems(R.drawable.app_2,R.string.app2_description,R.string.app2_address,R.string.app2_price,2));
+        arrayList.add(new ListItems(R.drawable.app_3,R.string.app3_description,R.string.app3_address,R.string.app3_price,3));
+        arrayList.add(new ListItems(R.drawable.app_4,R.string.app4_description,R.string.app4_address,R.string.app4_price,4));
         listAdapter = new CustomListAdapter(this,R.layout.list_menu,arrayList);
         listView.setAdapter(listAdapter);
-
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(),"Postition"+position,Toast.LENGTH_LONG).show();
-            }
-        });
 
     }
 
@@ -91,10 +86,10 @@ public class BandariaHomeTypesActivity extends AppCompatActivity {
     private void setHomeTypeOne(){
         textView.setText(R.string.hometype_1);
         currentType=1;
-        arrayList.add(new ListItems(R.drawable.app_1,R.string.app1_description,R.string.app1_address,R.string.app1_price));
-        arrayList.add(new ListItems(R.drawable.app_2,R.string.app2_description,R.string.app2_address,R.string.app2_price));
-        arrayList.add(new ListItems(R.drawable.app_3,R.string.app3_description,R.string.app3_address,R.string.app3_price));
-        arrayList.add(new ListItems(R.drawable.app_4,R.string.app4_description,R.string.app4_address,R.string.app4_price));
+        arrayList.add(new ListItems(R.drawable.app_1,R.string.app1_description,R.string.app1_address,R.string.app1_price,1));
+        arrayList.add(new ListItems(R.drawable.app_2,R.string.app2_description,R.string.app2_address,R.string.app2_price,2));
+        arrayList.add(new ListItems(R.drawable.app_3,R.string.app3_description,R.string.app3_address,R.string.app3_price,3));
+        arrayList.add(new ListItems(R.drawable.app_4,R.string.app4_description,R.string.app4_address,R.string.app4_price,4));
         removeAll();
         listAdapter.notifyDataSetChanged();
     }
@@ -102,10 +97,10 @@ public class BandariaHomeTypesActivity extends AppCompatActivity {
         textView.setText(R.string.hometype_2);
         currentType=2;
 
-        arrayList.add(new ListItems(R.drawable.detch_1,R.string.detch1_description,R.string.detch1_address,R.string.detch1_price));
-        arrayList.add(new ListItems(R.drawable.smdt_4,R.string.detch2_description,R.string.detch2_address,R.string.detch2_price));
-        arrayList.add(new ListItems(R.drawable.detch_3,R.string.detch3_description,R.string.detch3_address,R.string.detch3_price));
-        arrayList.add(new ListItems(R.drawable.detch_4,R.string.detch4_description,R.string.detch4_address,R.string.detch4_price));
+        arrayList.add(new ListItems(R.drawable.detch_1,R.string.detch1_description,R.string.detch1_address,R.string.detch1_price,5));
+        arrayList.add(new ListItems(R.drawable.smdt_4,R.string.detch2_description,R.string.detch2_address,R.string.detch2_price,6));
+        arrayList.add(new ListItems(R.drawable.detch_3,R.string.detch3_description,R.string.detch3_address,R.string.detch3_price,7));
+        arrayList.add(new ListItems(R.drawable.detch_4,R.string.detch4_description,R.string.detch4_address,R.string.detch4_price,8));
         removeAll();
         listAdapter.notifyDataSetChanged();
     }
@@ -114,10 +109,10 @@ public class BandariaHomeTypesActivity extends AppCompatActivity {
         currentType=3;
 
         arrayList= new ArrayList<>();
-        arrayList.add(new ListItems(R.drawable.smdt_1,R.string.smdt1_description,R.string.smdt1_address,R.string.smdt1_price));
-        arrayList.add(new ListItems(R.drawable.smdt_2,R.string.smdt2_description,R.string.smdt2_address,R.string.smdt2_price));
-        arrayList.add(new ListItems(R.drawable.smdt_3,R.string.smdt3_description,R.string.smdt3_address,R.string.smdt3_price));
-        arrayList.add(new ListItems(R.drawable.smdt_4,R.string.smdt4_description,R.string.smdt4_address,R.string.smdt4_price));
+        arrayList.add(new ListItems(R.drawable.smdt_1,R.string.smdt1_description,R.string.smdt1_address,R.string.smdt1_price,9));
+        arrayList.add(new ListItems(R.drawable.smdt_2,R.string.smdt2_description,R.string.smdt2_address,R.string.smdt2_price,10));
+        arrayList.add(new ListItems(R.drawable.smdt_3,R.string.smdt3_description,R.string.smdt3_address,R.string.smdt3_price,11));
+        arrayList.add(new ListItems(R.drawable.smdt_4,R.string.smdt4_description,R.string.smdt4_address,R.string.smdt4_price,12));
 
         listAdapter = new CustomListAdapter(this,R.layout.list_menu,arrayList);
         listView.setAdapter(listAdapter);
@@ -126,10 +121,10 @@ public class BandariaHomeTypesActivity extends AppCompatActivity {
         textView.setText(R.string.hometype_4);
         currentType=4;
 
-        arrayList.add(new ListItems(R.drawable.condo_1,R.string.condo1_description,R.string.condo1_address,R.string.condo1_price));
-        arrayList.add(new ListItems(R.drawable.condo_2,R.string.condo2_description,R.string.condo2_address,R.string.condo2_price));
-        arrayList.add(new ListItems(R.drawable.condo_3,R.string.condo3_description,R.string.condo3_address,R.string.condo3_price));
-        arrayList.add(new ListItems(R.drawable.condo_4,R.string.condo4_description,R.string.condo4_address,R.string.condo4_price));
+        arrayList.add(new ListItems(R.drawable.condo_1,R.string.condo1_description,R.string.condo1_address,R.string.condo1_price,13));
+        arrayList.add(new ListItems(R.drawable.condo_2,R.string.condo2_description,R.string.condo2_address,R.string.condo2_price,14));
+        arrayList.add(new ListItems(R.drawable.condo_3,R.string.condo3_description,R.string.condo3_address,R.string.condo3_price,15));
+        arrayList.add(new ListItems(R.drawable.condo_4,R.string.condo4_description,R.string.condo4_address,R.string.condo4_price,16));
         removeAll();
         listAdapter.notifyDataSetChanged();
     }
@@ -137,10 +132,10 @@ public class BandariaHomeTypesActivity extends AppCompatActivity {
         textView.setText(R.string.hometype_5);
         currentType=5;
 
-        arrayList.add(new ListItems(R.drawable.town_1,R.string.town1_description,R.string.town1_address,R.string.town1_price));
-        arrayList.add(new ListItems(R.drawable.town_2,R.string.town2_description,R.string.town2_address,R.string.town2_price));
-        arrayList.add(new ListItems(R.drawable.town_3,R.string.town3_description,R.string.town3_address,R.string.town3_price));
-        arrayList.add(new ListItems(R.drawable.town_4,R.string.town4_description,R.string.town4_address,R.string.town4_price));
+        arrayList.add(new ListItems(R.drawable.town_1,R.string.town1_description,R.string.town1_address,R.string.town1_price,17));
+        arrayList.add(new ListItems(R.drawable.town_2,R.string.town2_description,R.string.town2_address,R.string.town2_price,18));
+        arrayList.add(new ListItems(R.drawable.town_3,R.string.town3_description,R.string.town3_address,R.string.town3_price,19));
+        arrayList.add(new ListItems(R.drawable.town_4,R.string.town4_description,R.string.town4_address,R.string.town4_price,20));
         removeAll();
         listAdapter.notifyDataSetChanged();
     }

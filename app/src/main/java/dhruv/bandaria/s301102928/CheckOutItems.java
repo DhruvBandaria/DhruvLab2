@@ -1,10 +1,17 @@
 package dhruv.bandaria.s301102928;
 
-public class ListItems {
+public class CheckOutItems {
     int id;
     int image;
     int homeTitle,homeAddress,homePrice;
-    boolean isChecked;
+
+    public CheckOutItems(int image, int homeTitle, int homeAddress, int homePrice,int id) {
+        this.id = id;
+        this.image = image;
+        this.homeTitle = homeTitle;
+        this.homeAddress = homeAddress;
+        this.homePrice = homePrice;
+    }
 
     public int getId() {
         return id;
@@ -12,23 +19,6 @@ public class ListItems {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public boolean isChecked() {
-        return isChecked;
-    }
-
-    public void setChecked(boolean checked) {
-        isChecked = checked;
-    }
-
-    public ListItems(int image, int homeTitle, int homeAddress, int homePrice,int id) {
-        this.image = image;
-        this.homeTitle = homeTitle;
-        this.homeAddress = homeAddress;
-        this.homePrice = homePrice;
-        this.isChecked=false;
-        this.id=id;
     }
 
     public int getImage() {
