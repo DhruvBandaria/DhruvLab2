@@ -11,6 +11,7 @@
     <string name="hometype_3">Semi-Detached Home</string>
     <string name="hometype_4">Condominium Apartment</string>
     <string name="hometype_5">Town House</string>
+    <string name="Checkout">Checkout</string>
 
     <string name="app1_description">Title: Studio Apartment</string>
     <string name="app1_address">Address: 5541 King Street, Toronto, ON</string>
